@@ -54,16 +54,26 @@ body{
 .nav__bar{
     display: flex;
     z-index: 1;
-    position: sticky;
     flex-direction: column;
     align-items: center;
     top: 0;
     max-height: 100px;
-    background-color: #640d149d;
+    background-color: #640d14;
     width: 100%;
 }
+    .bg--lightred{
+        background-color: #AD2831;
+    }
+    .bg--darkred{
+        background-color:#640d14;
+    }
+    .bg--darkestred{
+        background-color: #38040E;
+    }
+    
     .logo{ 
     width: 120px;
+    border-radius: 20px;
     }
         .nav__bar--options{
         display: flex;
@@ -73,7 +83,7 @@ body{
             a{
             text-decoration: none;
             color: inherit;
-            font-size: 1.3em;
+            font-size: 2em;
             transition: .5s;
             }
                 li{
@@ -98,6 +108,7 @@ body{
         .img__carrousel{
             position: relative;
             border-radius: 15px;
+            margin-bottom: 2%;
             width: 100%;
         }
 
@@ -389,7 +400,6 @@ body{
     }
 
     .nav__bar{
-        position: sticky;
         width: 100%;
         flex-direction: row;
         justify-items: start;
@@ -450,8 +460,58 @@ body{
         margin: 0;
         align-self: end;
     }
-/* Gallery - specifics */
+/* Events - Specifics 768px */
+#web__grid--container--events{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
+/* Contact Us - Specifics 768px */
+#web__grid--container--contact-us{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
+/* Games - Specifics 768px*/
+#web__grid--container--games{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
+/* News - Specifics 768px*/
+#web__grid--container--news{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
+/* Gallery - Specifics 768px*/
 #web__grid--container--gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
+/* Events - Specifics 768px */
+#web__grid--container--who-we-are{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 9fr 1fr;
@@ -507,7 +567,10 @@ body{
         margin: 0 auto;
         width: 90%;
     }
-    
+
+    .nav__bar{
+        position: sticky;
+    }
 
     .main__box{
         

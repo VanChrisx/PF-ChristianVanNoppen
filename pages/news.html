@@ -4,34 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/index.css">
     <title>News|The Fighting Corner</title>
   </head>
   <body>
     <div class="web__container" id="web__grid--container--news">
-      <nav class="nav__bar">
-        <a href="../index.html">
-          <img src="../assets/img/capsule_616x353.jpg" alt="logo" class="logo" />
-        </a>
-        <ul class="nav__bar--options">
-          <li class="nav__bar--opt first__font">
-            <a href="./who-we-are.html">Who we are</a>
-          </li>
-          <li class="nav__bar--opt first__font">
-            <a href="./games.html">Games</a>
-          </li>
-          <li class="nav__bar--opt first__font">
-            <a href="./events.html">Events</a>
-          </li>
-          <li class="nav__bar--opt first__font">
-            <a href="./news.html">News</a>
-          </li>
-          <li class="nav__bar--opt first__font">
-            <a href="./contact-us.html">Contact Us</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg nav__bar flex-grow-1" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/img/capsule_616x353.jpg" alt="logo" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler  bg--lightred"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bg-light"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel bg--darkred"
+          >
+            <div class="offcanvas-header bg--darkestred">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                The Fighting Games Corner
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body bg--darkred">
+              <ul class="navbar-nav flex-grow-1 pe-3 nav__bar--options">
+                <li class="nav-item">
+                  <a aria-current="page" href="./who-we-are.html"
+                    >Who we are</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./games.html">Games</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./news.html">News</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+          
+            </div>
+          </div>
+        </div>
       </nav>
-      <main class="main__box news">
+      <main class="main__box news" id="main">
         <h1 class="main__title first__font">News</h1>
         <article class="info__box--block box--news">
           <a href="https://glossary.infil.net" target="_blank">
@@ -113,7 +156,7 @@
           </div>
         </article>
       </main>
-      <footer class="footer__bar">
+      <footer class="footer__bar" id="footer">
         <div>
           <a href="https://twitter.com/ValquiriaGames" target="_blank">
             <img
@@ -136,5 +179,12 @@
         <p class="copyright"></p>
       </footer>
     </div>
+
+    <!-- bootstrap - Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
