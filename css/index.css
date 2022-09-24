@@ -50,6 +50,12 @@ body{
 #footer{
     grid-area: footer;
 }
+.shadow--title{
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.shadow--text{
+    text-shadow:1px 1px 2px black, 0 0 1em red, 0 0 0.2em red
+}
 
 .nav__bar{
     display: flex;
@@ -80,11 +86,14 @@ body{
         justify-content: space-around;
         width: 60%;
         }
-            a{
+            ul li a{
             text-decoration: none;
             color: inherit;
             font-size: 2em;
-            transition: .5s;
+            transition: 0.5s;
+            }
+            ul li a:hover{
+                color: #e7555f;
             }
                 li{
                 list-style-type: none;
@@ -140,6 +149,7 @@ body{
             font-size: 3em;  
         }
             .info__box--image{
+                border-radius: 15px;
                 width: 80%;
             }
                 .info__box--text{
@@ -193,59 +203,135 @@ body{
                 vertical-align: middle;
             }
  
-/* Who we are - Specifics*/
+/* Events - Games - News */
+.info__box--block{
+    position: relative;
+    height: 23%;
+    width: 90%;
+    background-color: #AD2831;
+    border-radius: 15px;
+}
+    .info__box--grey--filter{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        filter: grayscale(1);
+    }
+    .info__box--grey--filter:hover{
+        filter: none;
+    } 
+        .image__box--egn{
+            width: 95%;
+            height: 95%;
+        }
+            .horizontal__image{
+                width: 95%;
+                height: 95%;
+                margin: 1% auto;
+                object-fit: cover;
+            }      
+.info__box--info__container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    a:hover{
+        color: #e7555f;
+    }
+    .info__box--title--egn{
+        font-size: 3em;
+        line-height: 1em;
+    }             
+        .info__box--text--egn{
+            width: 100%;
+            font-size: 1.3em;
+            letter-spacing: 2px;
+        }
 
+/* Who we are - Specifics*/
+#web__grid--container--who-we-are{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
 .who-we-are{
     margin-top: 50px;
-    padding: 50px;
+    padding: 2%;
 }
-    .who-we-are__text{
-        font-size: 1.5em;
-        margin-right: 50px;
-        margin-left: 50px;
-        text-align: left;
+    .who-we-are__box{
+        background-color: #AD2831;
+        border-radius: 15px;
+        padding: 2%;
+        width: 100%;
     }
-        .who-we-are__img{
-            float: left; 
-            margin-left: 50px;
-            margin-right: 20px;
-            max-width: 30%;
-            height:450px;
-            object-fit: cover;
+        .who-we-are__text{
+            font-size: 1.5em;
+            margin-right: 25px;
+            margin-left: 25px;
+            text-align: center;
         }
+            .who-we-are__img{ 
+                border-radius: 15px;
+                max-width: 100%;
+                height:450px;
+                object-fit: cover;
+            }
  
 
 /* Games - Specifics */
-
-.games{
-    margin-top: 50px;
-    height: 800px;
+#web__grid--container--games{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
 }
-        .info__box--block{
-            display: block;
-            position: relative;
-            height: 23%;
-            width: 90%;
-            left: 5%;
-            margin-bottom: 2%;
-            background-color: #AD2831;
-            border-radius: 15px;
-        }
-            .horizontal__image{
-                display: inline-block;
-                position: absolute;
-                width: 22%;
-                top: 14%;
-                left: 2%;
-            }
-                .info__box--info__container{
-                    text-align: left;
-                    width: 50%;
-                    display: inline-block;
-                }
+.games--events{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+  
+                                                
+
+/* Events - Specifics */
+#web__grid--container--events{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
+.events{
+    height: 40%;
+}
 
 /* News - Specifics */
-
+#web__grid--container--news{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
 .news{
     margin-top: 50px;
     height: 1100px;
@@ -254,24 +340,9 @@ body{
         height:20%;
     }
 
-/* Events - Specifics */
-.event__info--size{
-    position: absolute;
-    width: 60%;
-    right:7%;
-   
-}        
-        .events--size{
-            display: inline-block;
-            position: absolute;
-            width: 30%;
-            top: 14%;
-            left: 2%;
-        }
-            .events__resize{
-                height: 38%;
-            }
+
 /* Gallery - Specifics */
+
     .gallery{
         margin-top: 2%;
     }
@@ -324,6 +395,7 @@ body{
 
 
 /*Contact Us - Specifics  */
+
 .contact__us--box{
     margin-top: 50px;
     height: 800px;
@@ -389,6 +461,7 @@ body{
                                 }
 
 @media (min-width: 768px){
+
     #web__grid--container{
         grid-template-columns: 3fr 1fr;
         grid-template-rows: 1fr 4fr 4fr 1fr;
@@ -429,6 +502,7 @@ body{
         .info__box{
             width: 45%;
             margin: 0 auto;
+            padding: 1.5%;
         }
             .info__box--image{
                 width:90%;
@@ -460,17 +534,12 @@ body{
         margin: 0;
         align-self: end;
     }
+
 /* Events - Specifics 768px */
-#web__grid--container--events{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 9fr 1fr;
-    grid-template-areas: 
-    "nav "
-    "main "
-    "footer ";
-}
+
+
 /* Contact Us - Specifics 768px */
+
 #web__grid--container--contact-us{
     display: grid;
     grid-template-columns: 1fr;
@@ -480,17 +549,21 @@ body{
     "main "
     "footer ";
 }
+
 /* Games - Specifics 768px*/
+
 #web__grid--container--games{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 9fr 1fr;
+    grid-template-rows: 1fr 12fr 1fr;
     grid-template-areas: 
     "nav "
     "main "
     "footer ";
 }
+
 /* News - Specifics 768px*/
+
 #web__grid--container--news{
     display: grid;
     grid-template-columns: 1fr;
@@ -500,8 +573,9 @@ body{
     "main "
     "footer ";
 }
-/* Gallery - Specifics 768px*/
-#web__grid--container--gallery{
+
+/* Who we are - Specifics 768px */
+#web__grid--container--who-we-are{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 9fr 1fr;
@@ -510,8 +584,9 @@ body{
     "main "
     "footer ";
 }
-/* Events - Specifics 768px */
-#web__grid--container--who-we-are{
+/* Gallery - Specifics 768px*/
+
+#web__grid--container--gallery{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 9fr 1fr;
@@ -579,6 +654,7 @@ body{
     }
         .info__box{
             width: 45%;
+            padding: none;
         }
             .info__box--title{
                 margin-top: 1%;
@@ -598,40 +674,132 @@ body{
     .esport__logo{
             width: 50%;
     }    
-/* Gallery - specifics */
-.gallery__box{
-    width: 100%;
-    object-fit: cover;
-}
-    .gallery__img{
-        height: 100%;
-        object-fit: cover;
-        place-self: center;
+
+    
+    /* Who we are - Specifics 1024px */
+    .who-we-are__box{
+        width: 85%;
     }
-    #gallery__grid--container{
+    
+    /* Games - Specifics  */
+    
+    .games--events{
+        padding: 1%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .info__box--block{
+        height: 27%;
+    }
+    .info__box--grey--filter{
+        filter: none;
+        display: flex;  
+        align-self: center;
+        justify-content: space-around;
+        padding-left: 1.5%;
+        align-items: center;
+        margin:inherit;
+        width: 100%;
+        height: 95%;
+    }
+        .image__box--egn{
+            width: 80%;
+            
+        }
+        .horizontal__image{
+            height: 100%;
+            width: 100%;
+        }
+        
+        .info__box--info__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position:inherit;
+            width: 60%;        
+            transform: none;
+            top: 0;
+            left: 0;
+        }
+        .info__box--title--egn{
+            font-size: 1.7em;
+        }
+        .info__box--text--egn{
+            width: 90%;
+    }
+    
+    /* Events - Specifics 1024px*/
+    #web__grid--container--events{
         display: grid;
-        gap: 1% 0;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 9fr 1fr;
         grid-template-areas: 
-        "img1 img1 img2 img4"
-        "img1 img1 img5 img7"
-        "img8 img9 img10 img11"
-        "img3 img6 img12 img11"
-        ;
+        "nav "
+        "main "
+        "footer ";
     }
 
+    .events{
+        width: 90%;
+        height: 40%;
+    }
 
-}
-@media (min-width: 1250px){
+    /* Gallery - Specifics 1024px*/
+    
+    .gallery__box{
+        width: 100%;
+        object-fit: cover;
+    }
+        .gallery__img{
+            height: 100%;
+            object-fit: cover;
+            place-self: center;
+        }
+        #gallery__grid--container{
+            display: grid;
+            gap: 1% 0;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "img1 img1 img2 img4"
+            "img1 img1 img5 img7"
+            "img8 img9 img10 img11"
+            "img3 img6 img12 img11"
+            ;
+        }
+    
+    @media (min-width: 1250px){
+
     .info__box--text{
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin: 1% auto;
     }
+
+    /* Games - Specifics */
+    .info__box--title--egn{
+        font-size: 1.7em;
+    }
+    .info__box--text--egn{
+        font-size: 1.4em;
+        width: 90%;
+    }
+
 }
+
+
 @media (min-width: 1600px){
+
     .info__box--text{
-        font-size: 2em;
+        font-size: 1.7em;
         margin: 1% auto;
     }
+
+    /* Games - Specifics */
+    .info__box--text--egn{
+        font-size: 1.6em;
+        width: 90%;
+    }
+
 }
+
+
