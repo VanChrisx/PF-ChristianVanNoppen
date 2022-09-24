@@ -10,18 +10,23 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index.css" />
     <title>News|The Fighting Corner</title>
   </head>
   <body>
     <div class="web__container" id="web__grid--container--news">
+      <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg nav__bar flex-grow-1" id="nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
-            <img src="../assets/img/capsule_616x353.jpg" alt="logo" class="logo" />
+            <img
+              src="../assets/img/capsule_616x353.jpg"
+              alt="logo"
+              class="logo"
+            />
           </a>
           <button
-            class="navbar-toggler  bg--lightred"
+            class="navbar-toggler bg--lightred"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
@@ -49,9 +54,7 @@
             <div class="offcanvas-body bg--darkred">
               <ul class="navbar-nav flex-grow-1 pe-3 nav__bar--options">
                 <li class="nav-item">
-                  <a aria-current="page" href="./who-we-are.html"
-                    >Who we are</a
-                  >
+                  <a aria-current="page" href="./who-we-are.html">Who we are</a>
                 </li>
                 <li class="nav-item">
                   <a href="./games.html">Games</a>
@@ -69,77 +72,69 @@
                   <a href="./contact-us.html">Contact Us</a>
                 </li>
               </ul>
-          
             </div>
           </div>
         </div>
       </nav>
+      <!-- Main -->
       <main class="main__box news" id="main">
         <h1 class="main__title first__font">News</h1>
-        <article class="info__box box--news">
-          <a href="https://glossary.infil.net" target="_blank">
+        <article class="info__box news--row" >
+          <p class="info__box--title first__font">Noticia 1</p>
+          <a href="#">
             <img
               src="../assets/img/capsule_616x353.jpg"
-              alt="Noticia"
-              class="info__box--image horizontal__image"
+              alt="Games image"
+              class="info__box--image"
             />
           </a>
-          <div class="info__box--info__container">
-            <p class="info__box--title first__font">Noticia 1</p>
-            <p class="info__box--text__games">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repudiandae voluptas deserunt ipsum quaerat alias aliquid? Qui consequuntur tempore omnis?
-            </p>
-          </div>
+          <p class="info__box--text news--text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora nostrum vitae, suscipit quas ea debitis quibusdam nihil exercitationem reprehenderit et?
+          </p>
         </article>
-
-        <article class="info__box box--news">
-          <a href="https://glossary.infil.net" target="_blank">
+        <article class="info__box news--row">
+          <p class="info__box--title first__font">Noticia 2</p>
+          <a href="#">
             <img
               src="../assets/img/capsule_616x353.jpg"
-              alt="Fighting Games news"
-              class="info__box--image horizontal__image"
+              alt="Games image"
+              class="info__box--image"
             />
           </a>
-          <div class="info__box--info__container">
-            <p class="info__box--title first__font">Noticia 2</p>
-            <p class="info__box--text__games">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus porro hic id voluptate pariatur necessitatibus a tenetur commodi asperiores quae!
-            </p>
-          </div>
+          <p class="info__box--text news--text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque assumenda laudantium accusantium commodi amet sequi quod natus nisi neque.
+          </p>
         </article>
-
-        <article class="info__box box--news">
-          <a href="https://glossary.infil.net" target="_blank">
+        <article class="info__box news--row">
+          <p class="info__box--title first__font">Noticia 3</p>
+          <a href="#" class="img__title--box">
             <img
               src="../assets/img/capsule_616x353.jpg"
-              alt="Fighting Games news"
-              class="info__box--image horizontal__image"
+              alt="Events Image"
+              class="info__box--image"
             />
           </a>
-          <div class="info__box--info__container">
-            <p class="info__box--title first__font">Noticia 3</p>
-            <p class="info__box--text__games">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ipsam consequatur perspiciatis earum nihil assumenda. Dolor totam placeat aut corrupti?
-            </p>
-          </div>
+          <p class="info__box--text news--text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit nesciunt optio eos, laboriosam ipsa assumenda totam delectus quos. Totam?
+          </p>
         </article>
-
-        <article class="info__box box--news">
-          <a href="https://glossary.infil.net" target="_blank">
+        <article class="info__box news--row">
+          <p class="info__box--title first__font">Noticia 4</p>
+          <a href="#">
             <img
               src="../assets/img/capsule_616x353.jpg"
-              alt="Fighting Games news"
-              class="info__box--image horizontal__image"
+              alt="News Images"
+              class="info__box--image"
             />
           </a>
-          <div class="info__box--info__container">
-            <p class="info__box--title first__font">Noticia 4</p>
-            <p class="info__box--text__games">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nemo ullam tempora. Nisi repellendus quisquam quos nulla eveniet cum mollitia.
-            </p>
-          </div>
+          <p class="info__box--text news--text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab placeat hic delectus commodi amet porro ad dolores dolore aliquid rem!
+          </p>
         </article>
       </main>
+
+      <!-- Footer -->
+
       <footer class="footer__bar" id="footer">
         <div>
           <a href="https://twitter.com/ValquiriaGames" target="_blank">
