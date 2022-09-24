@@ -1,4 +1,7 @@
 # PreEntrega2VanNoppen
+
+GitPages:https://vanchrisx.github.io/PreEntrega2VanNoppen/index.html
+
 El sitio web fue realizado con responsive para las siguientes pantallas:
 
 Mobile
