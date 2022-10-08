@@ -1,0 +1,51 @@
+//Fonts Family
+
+//Neue
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+//Teko
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+//-----------------------------------
+
+// Colors
+
+$color:(
+    lightestred: #e7555f,
+    lightred:#AD2831,
+    midred:#800E13,
+    darksred:#640d14,
+    darkerred:#640d149d,
+    darkestred:#38040E
+);
+
+//Font Size
+
+$title-size:4em;
+$subtitle-size:3em;
+$sutitle2-size:2em;
+$a-text-size:1.8em;
+$text-size-xl:1.7em;
+$text-size-l:1.4em;
+$text-size:1.3em;
+
+//Margins
+$margin1-auto:1% auto;
+$margin2-auto:2% auto;
+
+
+.img__border{
+    border-radius: 15px;
+}
+
+.first__font{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.shadow--title{
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.shadow--text{
+    text-shadow:1px 1px 2px black, 0 0 1em red, 0 0 0.2em red
+}
+

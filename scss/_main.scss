@@ -1,0 +1,507 @@
+// Mobile
+
+.main__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: map-get($color , midred );
+    border-radius: 15px;
+    width: 90%;
+    margin: $margin2-auto;
+    h1{
+        font-size: $title-size;
+    }
+    .info__box{
+        display: flex;
+        flex-direction: column;
+        background-color: map-get($color , lightred );
+        margin-top: 4%;
+        margin-bottom: 4%;
+        border-radius: 15px;
+        width: 90%;
+        transition: .5s;
+        &:hover{
+            transform:scale(1.1);
+        }
+        h2{
+            font-size: $subtitle-size;
+        }
+        a{
+            img{
+                border-radius: 15px;
+                width: 80%;
+            }
+        }
+        p{
+            font-size: $text-size;
+            margin: $margin1-auto;
+            width:90%;
+        }
+    }
+    
+}
+
+// Events - Games - News
+
+.info__box--block{
+    position: relative;
+    height: 23%;
+    width: 92%;
+    background-color: map-get($color , lightred);
+    border-radius: 15px;
+    
+    div{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        filter: grayscale(1);
+        
+        &:hover{
+            filter: none;
+        }
+        a{
+            width: 95%;
+            height: 95%;
+            img{
+                width: 95%;
+                height: 95%;
+                margin: $margin1-auto;
+                object-fit: cover;
+            }
+        }
+        .info__box--info__container{
+            position: absolute;
+            top:70%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            a{
+                text-decoration: none;
+                color: inherit;
+                &:hover{
+                    color: map-get($color , lightred);
+                }
+                h2{
+                    font-size: $title-size;
+                    line-height: 1em;
+                }
+            }
+            p{
+                width: 100%;
+                font-size: $text-size;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+// Who we are - 
+
+.who-we-are{
+    margin-top: 50px;
+    padding: 2%;
+    .who-we-are__box{
+        background-color: map-get($color , lightred );
+        border-radius: 15px;
+        padding: 2%;
+        width: 100%;
+        img{
+            border-radius: 15px;
+                max-width: 100%;
+                height:450px;
+                object-fit: cover;
+        }
+        p{
+            font-size: $text-size-xl;
+            margin-right: 25px;
+            margin-left: 25px;
+            text-align: center;
+        }
+    }
+}
+
+// Games - Specifics
+
+.games--events{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+// Events - Specifics
+
+.events{
+    height: 40%;
+}
+
+// News - Specifics
+
+.news--text{
+    font-size: $text-size;
+}
+
+// Gallery - Specifics
+
+.gallery{
+    margin: 5% auto;
+    div{
+        img{
+            width: 95%;
+            margin-bottom: 2%;
+            border-radius: 15px;
+            transition: .4s;
+            &:hover{
+                transform:scale(1.2);
+            }
+        }
+    }
+}
+
+// Contact Us - Specifics
+
+.contact__us--box{
+    margin-top: 2%;
+    .contact__us--container{
+        height: 85%;
+        width: 95%;
+        background-color: map-get($color , lightred );
+        margin: 0 auto;
+        text-align: left;
+        border-radius: 15px;
+        img{
+            position:relative;
+            vertical-align: middle;
+            width:90%;
+            height: 94%;
+            object-fit: cover;
+            left: 5%;
+            top: 3%;
+            border-radius: 20px;
+        }
+        form{
+            position: absolute;
+            width: 75%;
+            top:50%;
+            left: 12%;
+            
+            label{
+                font-size: $text-size-l;
+            }
+
+            input{
+                display: block;
+                margin:0 auto;
+                width: 100%;
+                border-radius: 10px;
+                height:40px;
+                margin-bottom: 12%;
+            }
+            .comment__lbl{
+                display: block;
+            }
+            textarea{
+                width: 100%;
+                border-radius: 10px;
+                height: 120px;
+            }
+            button{
+                font-size: $text-size-l;
+                display: block;
+                margin-top: 20px;
+                width: 100%;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                color: antiquewhite;
+                background-color: map-get($color , lightestred );
+            }
+        }
+    }
+}
+
+// Screen Resolution 768px
+
+@media (min-width: 768px){
+
+    .main__box{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+        text-align: center;
+        width: 95%;
+        .info__box{
+            width: 45%;
+            margin: 0 auto;
+            padding: 1.5%;
+            h2{
+                font-size:$sutitle2-size;
+            }
+            a{
+                img{
+                    width:90%;
+                }
+            }
+            p{
+                font-size: 0;
+                margin: 0;
+            } 
+        }
+
+    }
+
+    // News - Specifics 768px
+
+    .news{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 2%;
+        padding:3%;
+        .news--row{
+            width: 100%;
+            flex-direction: row;
+            margin-bottom: 2%;
+            p{
+                font-size: $text-size;
+                text-align: left;
+            }
+        }
+        
+    }
+    
+    // Gallery - Specifics 768px
+    .gallery{
+        flex-wrap: wrap;
+        margin: 5% auto;
+        padding: 1%;
+        .gallery__box{
+            width: 90%;
+            margin-bottom: 5%;
+            div{
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                    place-self: center;
+                }
+            }
+        }
+    }
+
+    // Contact Us - Specifics 768px
+
+    .contact__us--box{
+        padding: 2%;
+        .contact__us--container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2%;
+            img{
+                position: unset;
+                width: 50%;
+            }
+            form{
+                position: unset;
+                width: 45%;
+            }
+        }
+    }
+}
+
+// Screen Resolution 1024px
+
+@media (min-width: 1024px){
+    .main__box{
+        
+        height: 90%;
+        align-self: center;
+        .info__box{
+            width: 45%;
+            padding: none;
+            h2{
+                margin-top: 1%;
+                font-size: $subtitle-size;
+            }
+            a{
+                img{
+                    width: 75%;
+                }
+            }
+            p{
+                font-size: $text-size;
+                margin: $margin1-auto;
+            }
+        }
+
+    }
+
+    // Who we are - Specifics 1024px
+
+    .who-we-are__box{
+        width: 85%;
+    }
+
+    // Games - Events - Specifics 1024px
+    .games--events{
+        padding: 1%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        .info__box--block{
+            height: 27%;
+
+            div{
+
+                filter: none;
+                display: flex;  
+                align-self: center;
+                justify-content: space-around;
+                padding-left: 1.5%;
+                align-items: center;
+                margin:inherit;
+                width: 100%;
+                height: 95%;
+                a{
+                    width: 80%;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    position:inherit;
+                    width: 60%;        
+                    transform: none;
+                    top: 0;
+                    left: 0;
+                    a{
+                        height: auto;
+                        h2{
+                            font-size: $subtitle-size;
+                        }
+                    }
+                    p{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Events - Specifics 1024px
+    .main__box{
+        .events{
+            width: 90%;
+            height: 40%;
+        }
+    }
+    
+
+    //Gallery - Specifics 1024px
+    .gallery{
+        flex-direction: column;
+        .gallery__box{
+            width: 90%;
+            object-fit: cover;
+            div{
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                    place-self: center;
+                }
+            }
+        }
+    }
+
+    // News - Specifics 1024px
+
+    .news{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 2%;
+        .news--row{
+            width: 90%;
+            flex-direction: row;
+            align-items: center;
+            p{
+                font-size: $text-size;
+                text-align: left;
+            }
+        }
+    }
+    
+    // Contact Us - Specifics 1024px
+
+    .contact__us--box{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 2%;
+        .contact__us--container{
+            width: 80%;
+            height: 90%;
+        }
+        
+    }
+}
+
+@media (min-width: 1250px){
+    .main__box{
+        .info__box{
+            p{
+                font-size: $text-size-xl;
+                margin: $margin1-auto;
+            }
+        }
+    }
+
+    // Games - Specifics 1250px
+    .game--events{
+        .info__box--block{
+            div{
+                div{
+                    a{
+                        h2{
+                            font-size: $subtitle-size;
+                        }
+                    }
+                    p{
+                        font-size: $text-size-l;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1600px){
+
+    .main__box{
+        .info__box{
+            p{
+                font-size: $text-size-xl;
+                margin: $margin1-auto;
+            }
+        }
+    }
+
+    // Games - Specifics 1600px
+    .games--events{
+        .info__box--block{
+            div{
+                div{
+                    p{
+                        font-size: $text-size-xl;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}

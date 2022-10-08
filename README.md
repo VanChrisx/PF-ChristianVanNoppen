@@ -11,6 +11,8 @@ Mobile
 Herramientas/Frameworks/Librerias utilizados:
 
 Bootstrap(NavBar)
+SEO
+Sass
 Grid
 Flex
 wow.js

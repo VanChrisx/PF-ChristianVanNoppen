@@ -1,0 +1,27 @@
+// Mobile
+
+.header__box{
+    z-index: 0;
+    position: relative;
+    width:95%;
+    margin: 0 auto;
+    h1{
+        font-size: $title-size;
+        margin: $margin2-auto;
+    }
+}
+
+
+// Screen Resolution 768px
+@media (min-width: 768px){
+    .header__box{
+        z-index: 0;
+        div{
+            img{
+                z-index: 0;
+                width: 95%;
+            }
+        }
+    }
+}
+

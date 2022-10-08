@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-color: #250902;
+    text-align: center;   
+    color:whitesmoke;
+}
+
+// mobile
+.web__container{
+    background-color: #38040E;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    width: 100%;
+}
+#web__grid--container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "aside"
+    "footer";
+}
+
+#nav{
+    grid-area: nav;
+}
+#header{
+    grid-area: header;
+}
+#main{
+    grid-area: main;
+}
+#aside{
+    grid-area: aside;
+}
+#footer{
+    grid-area: footer;
+}
+
+/* Who we are - Specifics*/
+#web__grid--container--who-we-are{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
+
+/* Games - Specifics */
+#web__grid--container--games{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 15fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
+
+// Gallery - Specifics
+#gallery__img--1{
+    grid-area: img1;
+}
+#gallery__img--2{
+    grid-area: img2;
+}
+#gallery__img--3{
+    grid-area: img3;
+}
+#gallery__img--4{
+    grid-area: img4;
+}
+#gallery__img--5{
+    grid-area: img5;
+}   
+#gallery__img--6{
+    grid-area: img6;
+}
+#gallery__img--7{
+    grid-area: img7;
+}
+#gallery__img--8{
+    grid-area: img8;
+}
+#gallery__img--9{
+    grid-area: img9;
+}
+#gallery__img--10{
+    grid-area: img10;
+}
+#gallery__img--11{
+    grid-area: img11;
+}
+#gallery__img--12{
+    grid-area: img12;
+}   
+
+/* Events - Specifics */
+#web__grid--container--events{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
+
+/* News - Specifics */
+#web__grid--container--news{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 12fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
+
+/*Contact Us - Specifics  */
+#web__grid--container--contact-us{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas: 
+    "nav "
+    "main "
+    "footer ";
+}
+
+@media (min-width: 768px){
+
+
+
+    #web__grid--container{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 4fr 4fr 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "header aside"
+        "main aside"
+        "footer footer";
+    }
+
+    // Games - Specifics 768px
+    #web__grid--container--games{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 9fr 1fr;
+        grid-template-areas: 
+        "nav "
+        "main "
+        "footer ";
+    }
+
+    // News - Specifics 768px
+    #web__grid--container--news{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 11fr 1fr;
+        grid-template-areas: 
+        "nav "
+        "main "
+        "footer ";
+    }
+
+    // Who we are - Specifics 768px 
+    #web__grid--container--who-we-are{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 9fr 1fr;
+        grid-template-areas: 
+        "nav "
+        "main "
+        "footer ";
+    }
+
+    // Gallery - Specifics 768px
+    #web__grid--container--gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 9fr 1fr;
+        grid-template-areas: 
+        "nav "
+        "main "
+        "footer ";
+    }
+    #gallery__grid--container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img1 img1 img2"
+        "img1 img1 img5 "
+        "img8 img9 img11"
+        "img4 img7 img12"
+        "img3 img6 img10 ";
+        gap: 1% 0%;   
+    }
+
+    // Contact Us - Specifics 768px
+    #web__grid--container--contact-us{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 9fr 1fr;
+        grid-template-areas: 
+        "nav "
+        "main "
+        "footer ";
+    }
+
+}
+
+@media (min-width: 1024px){
+    
+    .web__container{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #web__grid--container{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 6fr 8fr 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main aside"
+        "footer footer";
+    }
+
+    // Gallery - Specifics 1024px
+
+    #gallery__grid--container{
+        display: grid;
+        gap: 1% 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img1 img1 img2 img4"
+        "img1 img1 img5 img7"
+        "img8 img9 img10 img11"
+        "img3 img6 img12 img11"
+        ;
+    }
+    
+    // Events - Specifics 1024px
+
+    #web__grid--container--news{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 13fr 1fr;
+        grid-template-areas: 
+        "nav "
+        "main "
+        "footer ";
+    }
+
+    // Contact Us - Specifics 1024px 
+    
+    #web__grid--container--contact-us{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 12fr 1fr;
+        grid-template-areas: 
+        "nav "
+        "main "
+        "footer ";
+    }
+
+}
