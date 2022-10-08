@@ -12,9 +12,8 @@
     }
 
 .nav__bar{
-    display: flex;
+    @include flex-mixin-column;
     z-index: 1;
-    flex-direction: column;
     align-items: center;
     top: 0;
     max-height: 100px;

@@ -33,6 +33,14 @@ $text-size:1.3em;
 $margin1-auto:1% auto;
 $margin2-auto:2% auto;
 
+@mixin flex-mixin-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-mixin-row {
+    display: flex;
+    flex-direction: row;
+}
 
 .img__border{
     border-radius: 15px;

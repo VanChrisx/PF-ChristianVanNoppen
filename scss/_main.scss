@@ -1,8 +1,7 @@
 // Mobile
 
 .main__box{
-    display: flex;
-    flex-direction: column;
+    @include flex-mixin-column;
     align-items: center;
     background-color: map-get($color , midred );
     border-radius: 15px;
@@ -12,8 +11,7 @@
         font-size: $title-size;
     }
     .info__box{
-        display: flex;
-        flex-direction: column;
+        @include flex-mixin-column;
         background-color: map-get($color , lightred );
         margin-top: 4%;
         margin-bottom: 4%;
@@ -123,8 +121,7 @@
 // Games - Specifics
 
 .games--events{
-    display: flex;
-    flex-direction: column;
+    @include flex-mixin-column;
     justify-content: space-evenly;
     text-align: center;
 }
@@ -293,8 +290,7 @@
     .contact__us--box{
         padding: 2%;
         .contact__us--container{
-            display: flex;
-            flex-direction: row;
+            @include flex-mixin-row;
             align-items: center;
             justify-content: space-around;
             padding: 2%;
@@ -370,8 +366,7 @@
                     }
                 }
                 div{
-                    display: flex;
-                    flex-direction: column;
+                    @include flex-mixin-column;
                     align-items: center;
                     justify-content: space-evenly;
                     position:inherit;
