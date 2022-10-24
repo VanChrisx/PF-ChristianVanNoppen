@@ -238,8 +238,8 @@ body {
 
 .nav__bar {
   display: flex;
-  z-index: 1;
   flex-direction: column;
+  z-index: 1;
   align-items: center;
   top: 0;
   max-height: 100px;
@@ -349,6 +349,37 @@ body {
   font-size: 1.3em;
   margin: 1% auto;
   width: 90%;
+}
+
+.content {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+.content video {
+  filter: grayscale(1);
+  position: absolute;
+  left: 0%;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+}
+.content div {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.content div a {
+  text-decoration: none;
+}
+.content div a h1 {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 7em;
+}
+.content div p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4em;
 }
 
 .info__box--block {
@@ -534,6 +565,9 @@ body {
     font-size: 0;
     margin: 0;
   }
+  .content div {
+    top: 25%;
+  }
   .news {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -601,6 +635,9 @@ body {
   .main__box .info__box p {
     font-size: 1.3em;
     margin: 1% auto;
+  }
+  .content div {
+    top: 25%;
   }
   .who-we-are__box {
     width: 85%;
