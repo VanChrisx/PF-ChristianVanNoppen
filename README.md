@@ -1,19 +1,26 @@
-# PreEntrega2VanNoppen
+# The Fighting Game Corner
 
-GitPages:https://vanchrisx.github.io/PreEntrega3VanNoppen/index.html
+## Links to website
+_**Gitpages**: https://vanchrisx.github.io/The-fighting-game-corner/
+_**000webhost**: https://the-fighting-games-corner.000webhostapp.com
 
-El sitio web fue realizado con responsive para las siguientes pantallas:
+## Requirements
+_**Web Browsers**: Brave, Opera, Chrome, Edge and Firefox_
 
-Mobile
--768px
--1024px
+## Features
+_**The website is responsive for the following resolutions**:
 
-Herramientas/Frameworks/Librerias utilizados:
+_Mobile(min width 280px).
+_Tablets(min width 768px).
+_Laptops(min width 1024px).
+_Desktops(min width 1250px).
 
-Bootstrap(NavBar)
-SEO
-Sass
-Grid
-Flex
-wow.js
-Animation.css
+## Made With
+_Bootstrap
+_Sass
+_Grid
+_Flex
+_**Used libraries**: wow.js and Animation.css
+
+## Credits
+_Christian Daniel Van Noppen
