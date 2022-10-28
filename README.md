@@ -15,6 +15,9 @@ _Tablets(min width 768px)._
 _Laptops(min width 1024px)._
 _Desktops(min width 1250px)._
 
+## Error 404
+_There's an Error 404 when press on the button submit of the Contact Us Form and another on the main page when press on the "TSM" logos._
+
 ## Made With
 _Bootstrap_
 _Sass_
